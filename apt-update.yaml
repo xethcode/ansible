@@ -3,7 +3,6 @@
 
   become: true
   tasks:
-    - sudo: yes
     - name: update apt packages
       apt:
         upgrade: yes
