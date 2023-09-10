@@ -2,8 +2,8 @@
 - hosts: all
 
   become: true
-  sudo: yes
   tasks:
+    - sudo: yes
     - name: update apt packages
       apt:
         upgrade: yes
